@@ -12706,3 +12706,15 @@ a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
+
+/* CUSTOM */
+
+.round {
+  border-radius: 10px;
+}
+.section {
+  height: calc(100vh - 52px);
+}
+.section-first {
+  height: calc(100vh + 12px);
+}

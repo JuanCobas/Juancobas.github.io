@@ -14,7 +14,7 @@
   <body>
     <!-- NAVBAR -->
     <nav
-      class="navbar has-background-link-dark"
+      class="navbar has-background-link-dark is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
@@ -38,9 +38,9 @@
 
       <div id="navbarBasicExample" class="navbar-menu navbar-end">
         <div class="navbar-item">
-          <a class="navbar-item has-text-white"> Home </a>
+          <a href="#home" class="navbar-item has-text-white"> Home </a>
 
-          <a class="navbar-item has-text-white"> About </a>
+          <a href="#about" class="navbar-item has-text-white"> About </a>
 
           <a class="navbar-item has-text-white"> My Projects </a>
 
@@ -49,13 +49,18 @@
       </div>
     </nav>
     <!-- HOME PAGE -->
-    <section class="section has-background-info">
+    <section id="home" class="section-first has-background-info">
       <div class="container">
-        <div class="columns card pt-6">
-          <div class="column card is-two-thirds mt-6">
+        <div class="columns pt-6">
+          <div class="column mt-6">
+            <figure class="image is-256x256">
+              <img class="is-rounded" src="./Images/me.jpg" alt="" />
+            </figure>
+          </div>
+          <div class="column is-two-thirds mt-6">
             <h1 class="title is-1">
-              Hello! My name is Juan and this is my webpage so you can know me
-              better.
+              Hello! My name is Juan and this is my webpage so you can know
+              more about me.
             </h1>
             <br />
             <h2 class="subtitle">
@@ -70,25 +75,50 @@
               <button class="button is-link is-rounded">Resume</button>
             </div>
           </div>
-          <div class="column card is-half mt-6">
-            <figure class="image is-256x256">
-              <img class="is-rounded" src="./Images/me.jpg" alt="" />
+        </div>        
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="column has-text-centered is-full mb-6">
+          <h1 class="title is-1">About Me</title>
+        </div>
+        <div class="columns is-6 is-variable">
+          <div class="column  is-one-third">            
+            <figure class="image">
+              <img class="round"  src="./Images/Videogames1.jpeg" />
+              <figcaption class="has-text-centered has-text-grey-light ">Illustrative - Arkanoid</figcaption>
+            </figure>            
+            <h1 class="title is-1 pt-4 has-text-centered">Videogames</h1>
+            I have a computer in my house since I can remeber. And I have been playing videogames since forever too, I can ever remeber the first videogame I played: School Bus Driver &trade;.
+            Yes... with the &trade;.
+            <br>
+            Since then and through the years my passion for videogames has wear off a bit. I still love it but one has other responsibilities.
+          </div>
+          <div class="column  is-one-third">
+            <figure class="image">
+              <img class="round" src="./Images/fitness.webp" />
+              <figcaption class="has-text-centered has-text-grey-light ">(Only illustrative, I don't look like this)</figcaption>
             </figure>
+            <h1 class="title is-1 pt-4 has-text-centered">Fitness</h1>
+            Three years ago I decided that playing too much videogames and not doing any kind of sports wasn't good for my healt. I started hitting the gym regularly and through time I not only improved my physique but learned a lot about my body and my healt. 
+            <br>
+            Today I know that being healty is not only eating a salad and doing exersice once in a while, it is a lifestyle. 
+          </div>
+          <div class="column is-one-third">
+            <figure class="image">
+              <img class="round" src="./Images/mecamping.jpg" />
+              <figcaption class="has-text-centered has-text-grey-light ">(Actually Me!)</figcaption>
+            </figure>
+            <h1 class="title is-1 pt-4 has-text-centered">Camping</h1>
+            Three years ago I decided that playing too much videogames and not doing any kind of sports wasn't good for my healt. I started hitting the gym regularly and through time I not only improved my physique but learned a lot about my body and my healt. 
+            <br>
+            Today I know that being healty is not only eating a salad and doing exersice once in a while, it is a lifestyle. 
           </div>
         </div>
       </div>
     </section>
-    <!-- ABOUT -->
-    <section class="section">
-      <div class="container">
-        <div class="content card">
-          <h1 class="title is-1 has-text-centered">About Me</h1>
-          <p>
-            My name is Juan, I'm from Argentina and I currently live in
-            Resistencia-Chaco
-          </p>
-        </div>
-      </div>
-    </section>
+    
   </body>
 </html>
