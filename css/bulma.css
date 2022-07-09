@@ -12713,8 +12713,14 @@ a.has-text-danger-dark:focus {
   border-radius: 10px;
 }
 .section {
-  height: calc(100vh - 52px);
+  min-height: 100vh;
 }
 .section-first {
-  height: calc(100vh + 12px);
+  min-height: 60vh
+}
+.section-bottom{
+  min-height: 60vh;
+}
+html{
+  scroll-behavior: smooth
 }

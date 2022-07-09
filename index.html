@@ -1,124 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juan Cobas</title>
-    <link rel="stylesheet" href="./css/bulma.css" />
-    <script
-      src="https://kit.fontawesome.com/f4d9702277.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav
-      class="navbar has-background-link-dark is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="./Images/logo.jpg" height="100%" />
-        </a>
 
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Cobas</title>
+  <link rel="stylesheet" href="./css/bulma.css" />
+  <script src="https://kit.fontawesome.com/f4d9702277.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="has-navbar-fixed-top">
+  <!-- NAVBAR -->
+  <nav class="navbar has-background-link-dark is-fixed-top" role="navigation" aria-label="main navigation">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="./Images/logo.jpg" height="100%" />
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu navbar-end">
+      <div class="navbar-item">
+        <a href="#home" class="navbar-item has-text-white"> Home </a>
+
+        <a href="#about" class="navbar-item has-text-white"> About </a>
+
+        <a href="#projects" class="navbar-item has-text-white"> My Projects </a>
+
+        <a href="#contact" class="navbar-item has-text-white"> Contact </a>
       </div>
-
-      <div id="navbarBasicExample" class="navbar-menu navbar-end">
-        <div class="navbar-item">
-          <a href="#home" class="navbar-item has-text-white"> Home </a>
-
-          <a href="#about" class="navbar-item has-text-white"> About </a>
-
-          <a class="navbar-item has-text-white"> My Projects </a>
-
-          <a class="navbar-item has-text-white"> Contact </a>
+    </div>
+  </nav>
+  <!-- HOME PAGE -->
+  <section id="home" class="section-first has-background-info is-flex">
+    <div class="container">
+      <div class="columns pt-6">
+        <div class="column mt-6">
+          <figure class="image is-256x256">
+            <img class="is-rounded" src="./Images/me.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="column is-two-thirds mt-6">
+          <h1 class="title is-1">
+            Hello! My name is Juan and this is my webpage so you can know
+            more about me.
+          </h1>
+          <br />
+          <h2 class="subtitle">
+            Currently I'm studing Electromechamincal engineering and really
+            close to get my degree. In the meantime I'm studing programming.
+            My long term goal is being able to work with embedded systems.
+          </h2>
+          <div class="buttons is-justify-content-center">
+            <a href="./Images/Juan's Resume.pdf" download>
+              <button class="button m-4">
+                <span class="icon ">
+                  <i class="fa-solid fa-download fa-xl"></i>
+                </span>
+                <span>Resume</span>
+              </button>
+            </a>
+            <a href="https://github.com/JuanCobas" target="_blank">
+              <button class="button m-4">
+                <span class="icon">
+                  <i class="fab fa-github fa-xl"></i>
+                </span>
+                <span>GitHub</span>
+              </button></a>
+            <a href="https://www.instagram.com/cobas.juanjuan/" target="_blank">
+              <button class="button m-4">
+                <span class="icon">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </span>
+                <span>Instagram</span>
+              </button></a>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- HOME PAGE -->
-    <section id="home" class="section-first has-background-info">
-      <div class="container">
-        <div class="columns pt-6">
-          <div class="column mt-6">
-            <figure class="image is-256x256">
-              <img class="is-rounded" src="./Images/me.jpg" alt="" />
-            </figure>
-          </div>
-          <div class="column is-two-thirds mt-6">
-            <h1 class="title is-1">
-              Hello! My name is Juan and this is my webpage so you can know
-              more about me.
-            </h1>
-            <br />
-            <h2 class="subtitle">
-              Currently I'm studing Electromechamincal engineering and really
-              close to get my degree. In the meantime I'm studing programming.
-              My long term goal is being able to work with embedded systems.
-            </h2>
-            <div class="buttons is-justify-content-center">
-              <span class="icon pr-4"
-                ><i class="fa-solid fa-download fa-xl"></i
-              ></span>
-              <button class="button is-link is-rounded">Resume</button>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="column has-text-centered is-full mb-6">
+        <h1 class="title is-1">About Me</title>
+      </div>
+      <div class="columns is-6 is-variable">
+        <div class="column  is-one-third">
+          <figure class="image">
+            <img class="round" src="./Images/Videogames1.jpeg" />
+            <figcaption class="has-text-centered has-text-grey-light ">Illustrative - Arkanoid</figcaption>
+          </figure>
+          <h1 class="title is-1 pt-4 has-text-centered">Videogames</h1>
+          I have a computer in my house since I can remeber. And I have been playing videogames since forever too, I can
+          ever remeber the first videogame I played: School Bus Driver &trade;.
+          Yes... with the &trade;.
+          <br>
+          Since then and through the years my passion for videogames has wear off a bit. I still love it but one has
+          other responsibilities.
+        </div>
+        <div class="column  is-one-third">
+          <figure class="image">
+            <img class="round" src="./Images/fitness.webp" />
+            <figcaption class="has-text-centered has-text-grey-light ">(Only illustrative, I don't look like this)
+            </figcaption>
+          </figure>
+          <h1 class="title is-1 pt-4 has-text-centered">Fitness</h1>
+          Three years ago I decided that playing too much videogames and not doing any kind of sports wasn't good for my
+          healt. I started hitting the gym regularly and through time I not only improved my physique but learned a lot
+          about my body and my healt.
+          <br>
+          Today I know that being healty is not only eating a salad and doing exersice once in a while, it is a
+          lifestyle.
+        </div>
+        <div class="column is-one-third">
+          <figure class="image">
+            <img class="round" src="./Images/mecamping.jpg" />
+            <figcaption class="has-text-centered has-text-grey-light ">(Me near the border between Argentina
+              and Chile)</figcaption>
+          </figure>
+          <h1 class="title is-1 pt-4 has-text-centered">Camping</h1>
+          <p>My first contact with camping was about 2011 visiting my cousins in the town of El Hoyo near El Bolson. For
+            me
+            this was lifechanging and I really fell in love with camping and going into the wild. Since then I have been
+            acquiring and throwing money into diferent cool camping tools. But is never enough and I'm always looking
+            for
+            new stuffs.
+            <br>
+            My next goal is a Hilleberg tent, but it's going to take time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROJECTS -->
+  <section id="projects" class="section has-background-info">
+    <div class="container">
+      <div class="column has-text-centered is-full pt-6 mb-6">
+        <h1 class="title is-1">My Projects</title>
+      </div>
+
+      <div class="columns is-6 is-variable">
+        <div class="column is-one-third">
+
+          <h1 class="title is-1 pt-4 has-text-centered">Django Blog</h1>
+          <br>
+          <p class="has-text-black">
+            During the second stage of the "INFORMATORIO" the final project was to create a full Blog about the 17
+            objectives
+            of sustainable development from the ONU to 2030. In the Blog someone could
+            create an account and commnet a Post. At the same time an Admin should have to be able to grant some users
+            with writing privileges to create Post with prefixed subjects.
+            <br>
+            The blog is not that pretty but at the time we were in a hurry and the condition for approval was to have a
+            functional Blog, and sure is functional.
+
+          </p>
+        </div>
+        <div class="column  is-one-third">
+          <figure class="image"><a href="./Images/BlogDjango2.jpg" target="_blank">
+              <img class="round" src="./Images/BlogDjango2.jpg" /></a>
+            <figcaption class="has-text-centered has-text-black ">Home Page</figcaption>
+          </figure>
+          <figure class="image"><a href="./Images/BlogDjango1.jpg" target="_blank">
+              <img class="round" src="./Images/BlogDjango1.jpg" /></a>
+            <figcaption class="has-text-centered has-text-black ">Logout</figcaption>
+          </figure>
+        </div>
+        <div class="column  is-one-third">
+          <figure class="image"><a href="./Images/BlogDjango3.jpg" target="_blank">
+              <img class="round" src="./Images/BlogDjango3.jpg" /></a>
+            <figcaption class="has-text-centered has-text-black ">Login</figcaption>
+          </figure>
+          <figure class="image"><a href="./Images/BlogDjango4.jpg" target="_blank">
+              <img class="round" src="./Images/BlogDjango4.jpg" /></a>
+            <figcaption class="has-text-centered has-text-black ">Sign in</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact" class="section-bottom pt-4">
+    <div class="container-contact ">
+      <div class="column has-text-centered is-full mb-1">
+        <h1 class="title is-1">Contact</title>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-half  ">
+          <form action="https://formsubmit.co/1a022b07acbaf8f06c5676982d7483a8" method="POST">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" name="Name" type="text" placeholder="Text input">
+              </div>
             </div>
-          </div>
-        </div>        
-      </div>
-    </section>
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="column has-text-centered is-full mb-6">
-          <h1 class="title is-1">About Me</title>
-        </div>
-        <div class="columns is-6 is-variable">
-          <div class="column  is-one-third">            
-            <figure class="image">
-              <img class="round"  src="./Images/Videogames1.jpeg" />
-              <figcaption class="has-text-centered has-text-grey-light ">Illustrative - Arkanoid</figcaption>
-            </figure>            
-            <h1 class="title is-1 pt-4 has-text-centered">Videogames</h1>
-            I have a computer in my house since I can remeber. And I have been playing videogames since forever too, I can ever remeber the first videogame I played: School Bus Driver &trade;.
-            Yes... with the &trade;.
-            <br>
-            Since then and through the years my passion for videogames has wear off a bit. I still love it but one has other responsibilities.
-          </div>
-          <div class="column  is-one-third">
-            <figure class="image">
-              <img class="round" src="./Images/fitness.webp" />
-              <figcaption class="has-text-centered has-text-grey-light ">(Only illustrative, I don't look like this)</figcaption>
-            </figure>
-            <h1 class="title is-1 pt-4 has-text-centered">Fitness</h1>
-            Three years ago I decided that playing too much videogames and not doing any kind of sports wasn't good for my healt. I started hitting the gym regularly and through time I not only improved my physique but learned a lot about my body and my healt. 
-            <br>
-            Today I know that being healty is not only eating a salad and doing exersice once in a while, it is a lifestyle. 
-          </div>
-          <div class="column is-one-third">
-            <figure class="image">
-              <img class="round" src="./Images/mecamping.jpg" />
-              <figcaption class="has-text-centered has-text-grey-light ">(Actually Me!)</figcaption>
-            </figure>
-            <h1 class="title is-1 pt-4 has-text-centered">Camping</h1>
-            Three years ago I decided that playing too much videogames and not doing any kind of sports wasn't good for my healt. I started hitting the gym regularly and through time I not only improved my physique but learned a lot about my body and my healt. 
-            <br>
-            Today I know that being healty is not only eating a salad and doing exersice once in a while, it is a lifestyle. 
-          </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" name="Email" type="email" placeholder="Email input">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea name="Message" class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link" type="submit">Submit</button>
+              </div>
+
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-    
-  </body>
+
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer has-background-grey-lighter">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Created</strong> by Juan Estanislao Cobas &copy;, Powered by
+      <div class=""><i class="fa-brands fa-xl fa-github p-3"></i>
+        <i class="fa-brands fa-xl fa-html5 p-3"></i>
+        <i class="fa-brands fa-xl fa-css3-alt p-3"></i>
+        <i class="fa-brands fa-xl fa-js-square p-3"></i>
+      </div>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
